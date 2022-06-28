@@ -55,14 +55,14 @@ function tipCalculation(event) {
     totalPerson.value * 1 == 0 ||
     Number.isInteger(totalPerson.value * 1) === false
   ) {
-    errorMessagePerson.innerHTML = "Can't be zero,fraction";
+    errorMessagePerson.innerHTML = "Can't be Zero,Empty,Fraction";
     totalPerson.classList.add("zero-value");
     totalPerson.focus();
   }
 
   if (totalBill.value === "" || totalBill.value * 1 === 0) {
     console.log(totalBill.value + "First");
-    errorMessageTotal.innerHTML = "Can't be zero";
+    errorMessageTotal.innerHTML = "Can't be Zero,Empty";
     totalBill.classList.add("zero-value");
     totalBill.focus();
   }
